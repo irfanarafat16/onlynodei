@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const cors = require('cors');
 const port = 5000
 
-*/mongoose.connect('mongodb://192.168.31.155:27017/testdbaa',
+/*mongoose.connect('mongodb://192.168.31.155:27017/testdbaa',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -28,7 +28,7 @@ const WordSchema = new mongoose.Schema({
 });
 
 const WordModel = mongoose.model("fromreact", WordSchema);
-/*
+*/
 
 app.use(cors({
     origin: '*'
@@ -52,11 +52,11 @@ app.get("/fromnodejs", (req, res) => {
 app.post('/store-data',(req, res) => {
   let data = req.body;
   console.log(data);
-  */const word = new WordModel({inputword: data.nb, servertime: data.nnow});
+  /*const word = new WordModel({inputword: data.nb, servertime: data.nnow});
   
   word.save((err) => {
   if (err) return handleError(err);
-  });/*
+  });*/
 
 });
 
