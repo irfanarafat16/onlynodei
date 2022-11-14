@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node
 WORKDIR /server
 ADD . /server
 RUN npm install
